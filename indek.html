@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soil pH and Vegetable Info</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header Section -->
+      <header class="header">
+        <h1>Vegetable Match</h1>
+        <p>Find the best vegetables for your soil pH!</p>
+      </header>
+
+      <!-- Input Section -->
+      <section class="ph-input">
+        <h2>Enter Soil pH</h2>
+        <input
+          type="number"
+          id="phValue"
+          placeholder="Enter pH (e.g., 6.5)"
+          step="0.1"
+          min="0"
+          max="14"
+        />
+        <button onclick="checkVegetable()">Check Vegetables</button>
+      </section>
+
+      <!-- Results Section -->
+      <section id="result" class="results">
+        <h2>Recommended Vegetables</h2>
+        <div id="vegetableList" class="card-container"></div>
+      </section>
+
+      <!-- Info Section -->
+      <section id="info" class="info">
+        <h2>Vegetable Info</h2>
+        <div id="infoContent">
+          <p>Select a vegetable to see details about planting and care.</p>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
